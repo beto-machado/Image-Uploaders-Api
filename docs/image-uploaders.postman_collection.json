@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "01e95385-6d98-4e6b-9b3d-656b43aa31a2",
+		"name": "image-uploaders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Uploaders",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploader[image]",
+							"contentType": "",
+							"type": "file",
+							"src": "/C:/Users/devbe/Desktop/IMG-20211108-WA0001.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/uploaders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"uploaders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Index Uploaders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/uploaders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"uploaders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
