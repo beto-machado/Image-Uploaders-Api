@@ -12,15 +12,19 @@ gem 'rack-cors'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
+  gem 'rspec-json_expectations'
   gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
+  gem "factory_bot_rails"
+  gem 'simplecov', require: false
 end
 
 group :development do
   gem 'listen', '~> 3.3'
   gem 'spring'
-  gem 'rubocop'
-  gem 'simplecov', require: false
-  gem 'solargraph'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+
