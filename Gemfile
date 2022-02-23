@@ -15,7 +15,6 @@ group :development, :test do
   gem 'rspec-json_expectations'
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
-  gem 'simplecov', require: false
 end
 
 group :development do

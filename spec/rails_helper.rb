@@ -1,7 +1,6 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] ||= 'test'
 
-require 'simplecov'
 require 'spec_helper'
 require File.expand_path('../config/environment', __dir__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
@@ -72,15 +71,6 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-
-  SimpleCov.start do
-    add_group 'Config', 'config'
-    add_group 'Controllers', 'app/controllers'
-    add_group 'Libs', 'lib'
-    add_group 'Models', 'app/models'
-    add_group 'Serializers', 'app/serializers'
-    add_group 'Specs', 'spec'
-  end
 
   config.include Request::JsonHelpers, type: :request
 end
